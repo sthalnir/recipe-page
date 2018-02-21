@@ -1,9 +1,70 @@
 /* --- global styles --- */
 
 /* flexible images */
+.background {
+  background-color: #FFFACD;
+}
+h1 {
+  font-family: sans-serif;
+  font-variant: small-caps;
+  color: #556B2F ;
+}
 
+header figure {
+  text-align: center;
+}
+
+header figcaption {
+  text-align: left;
+  font-family: sans-serif;
+}
 img {
   width: auto;
   max-width: 100%;
   height: auto;
+}
+p {
+  font-family: sans-serif;
+}
+
+.border {
+  padding: 1em;
+  border: .125em dashed;
+  background: #8FBC8B
+}
+
+h2 {
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+
+#ingredients {
+  background: #8FBC8B ;
+}
+
+#ingredients ul {
+  list-style: circle;
+  padding-left: 2em;
+  padding-right: 2em;
+  border: .125em dashed;
+}
+
+#ingredients li {
+  margin-top: .5em;
+  font-family: sans-serif;
+}
+
+#cooking-instructions {
+  background: #8FBC8B ;
+}
+
+#cooking-instructions ol {
+  padding-left: 2em;
+  padding-right: 2em;
+  border: .125em dashed;
+}
+
+#cooking-instructions li {
+    margin-top: .5em;
+    font-family: sans-serif;
 }
