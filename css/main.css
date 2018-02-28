@@ -1,8 +1,113 @@
 /* --- global styles --- */
 
+/* --- resets --- */
+html {
+  font: 100%/1.15 sans-serif;
+}
+
+body,
+figure,
+figcaption {
+  margin: 0;
+}
+
 /* flexible images */
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; /* remove descender spacing */
+}
+
+/* fig-1 */
+
+#fig-1 {
+  max-width: 60em; /* max-width of img */
+  margin: 0 auto;
+}
+
+#fig-1 div {
+  border: .125em dashed;
+  border-radius: .7em;
+  background: #8FBC8B;
+}
+
+.crop-square-w24 {
+  width: 24em;
+  height: 24em;
+  overflow: hidden;
+}
+
+.crop-square-w24 img {
+  max-width: 100%;
+  margin: 0 0 0 0;
+}
+
+#fig-1 figcaption {
+  text-align: right;
+}
+
 .background {
   background-color: #FFFACD;
+}
+body {
+  width: 90%;
+  max-width: 60em;
+  margin: 0 auto;
+}
+/* --- links ---*/
+
+/* interactive pseudo-class */
+
+a {
+  color: #000;
+}
+
+a:hover,
+a:focus {
+  color: #fff;
+}
+
+/* --- nav --- */
+#menu {
+  text-align: center;
+}
+
+nav {
+  padding-top: 1.5em;
+}
+
+nav h2 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  padding-top: .5em;
+  padding-left: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0em;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  padding: .5em;
+  border: 1px solid #000;
+  border-radius: .7em;
+  background-color: #FFD700  ;
+  font-family: sans-serif;
+  font-variant: small-caps;
+}
+nav a:hover,
+nav a:focus {
+  background-color: #008000;
 }
 h1 {
   font-family: sans-serif;
@@ -18,11 +123,7 @@ header figcaption {
   text-align: left;
   font-family: sans-serif;
 }
-img {
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
+
 p {
   font-family: sans-serif;
 }
@@ -30,6 +131,7 @@ p {
 .border {
   padding: 1em;
   border: .125em dashed;
+  border-radius: .7em;
   background: #8FBC8B
 }
 
@@ -38,15 +140,13 @@ h2 {
   font-variant: small-caps;
 }
 
-#ingredients {
-  background: #8FBC8B ;
-}
-
 #ingredients ul {
   list-style: circle;
   padding-left: 2em;
   padding-right: 2em;
   border: .125em dashed;
+  border-radius: .7em;
+  background: #8FBC8B
 }
 
 #ingredients li {
@@ -54,17 +154,36 @@ h2 {
   font-family: sans-serif;
 }
 
-#cooking-instructions {
-  background: #8FBC8B ;
-}
-
 #cooking-instructions ol {
   padding-left: 2em;
   padding-right: 2em;
   border: .125em dashed;
+  border-radius: .7em;
+  background: #8FBC8B
 }
 
 #cooking-instructions li {
     margin-top: .5em;
     font-family: sans-serif;
+}
+
+.back-to-top {
+  font-family: sans-serif;
+}
+/* --- layout for wider width screens --- */
+
+/* breakpoint */
+/* @media (min-width: 60em) {
+
+ main {
+    /* border: 1px dashed #000; */
+    overflow: hidden; /* clear-ing method */
+  } */
+
+  #ingredients,
+  #cooking-instructions {
+    float: left;
+    width: 50%;
+  }
+
 }
