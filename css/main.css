@@ -109,6 +109,7 @@ nav a:hover,
 nav a:focus {
   background-color: #008000;
 }
+
 h1 {
   font-family: sans-serif;
   font-variant: small-caps;
@@ -178,12 +179,10 @@ h2 {
  main {
     /* border: 1px dashed #000; */
     overflow: hidden; /* clear-ing method */
-  } */
+  /* } */
 
   #ingredients,
   #cooking-instructions {
     float: left;
     width: 50%;
   }
-
-}
