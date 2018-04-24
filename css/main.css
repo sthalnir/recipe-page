@@ -176,10 +176,6 @@ h2 {
 /* breakpoint */
 /* @media (min-width: 60em) {
 
- main {
-    /* border: 1px dashed #000; */
-    overflow: hidden; /* clear-ing method */
-  /* } */
 
   #ingredients,
   #cooking-instructions {
